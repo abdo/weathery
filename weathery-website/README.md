@@ -1,0 +1,1 @@
+## This website is meant to show you the weather of some great cities in our world
