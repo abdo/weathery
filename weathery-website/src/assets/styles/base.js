@@ -18,7 +18,8 @@ const secondary = '#333366';
 const black = '#232323';
 const white = '#FFFFFF';
 const red = '#FC4445';
-const gray = '#627273';
+const gray = '#d3cece';
+const lightGray = '#d3cece78';
 const transparent = '#00FFFF00';
 
 export const colors = {
@@ -28,5 +29,6 @@ export const colors = {
   white,
   red,
   gray,
+  lightGray,
   transparent,
 };
