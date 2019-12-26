@@ -6,18 +6,18 @@ import logo from '../../../../assets/images/logo.png';
 import {
   Container,
   HeadingContainer,
-  HeaderImage,
+  LogoImage,
   Heading,
   Subheader,
   StatusIndicator,
-} from './stylesComponents';
+} from './styledComponents';
 import getSubheader from './utils';
 
 const Header = ({ status }) => {
   return (
     <Container>
       <HeadingContainer>
-        <HeaderImage src={logo} />
+        <LogoImage src={logo} />
         <Heading>Weathery</Heading>
       </HeadingContainer>
       {status ? (

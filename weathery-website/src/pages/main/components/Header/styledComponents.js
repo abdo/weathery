@@ -18,6 +18,9 @@ export const Container = styled.div`
 export const HeadingContainer = styled.div`
   display: flex;
   align-items: center;
+  user-select: none;
+  width: 210px;
+  justify-content: space-between;
 `;
 
 export const Heading = styled.p`
@@ -27,8 +30,12 @@ export const Heading = styled.p`
   margin-left: 20px;
 `;
 
-export const HeaderImage = styled.img`
+export const LogoImage = styled.img`
   width: 42px;
+  transition: all 0.4s;
+  &:hover {
+    width: 45px;
+  }
 `;
 
 export const Subheader = styled.p`

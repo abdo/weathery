@@ -20,6 +20,7 @@ const white = '#FFFFFF';
 const red = '#FC4445';
 const gray = '#d3cece';
 const lightGray = '#d3cece78';
+const darkGray = '#888';
 const transparent = '#00FFFF00';
 
 export const colors = {
@@ -30,5 +31,6 @@ export const colors = {
   red,
   gray,
   lightGray,
+  darkGray,
   transparent,
 };
