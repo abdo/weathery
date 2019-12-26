@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MainPage from './pages/main';
+import { Spinner } from './common/styledComponents/spinner';
 
 function App() {
-  return <MainPage />;
+  const [appLoaded, setAppLoaded] = useState(false);
+  useEffect(() => {
+    setAppLoaded(true);
+  }, []);
+  return (
+    <>
+      <Spinner isLoading={!appLoaded} />
+      <MainPage />
+    </>
+  );
 }
 
 export default App;

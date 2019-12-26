@@ -4,7 +4,7 @@ import axios from 'axios';
 import Header from './components/Header';
 import List from './components/List';
 import secrets from '../../websiteKeys.secret';
-import { Spinner } from './styledComponents';
+import { Spinner } from '../../common/styledComponents/spinner';
 
 const numberOfCitiesShown = 5;
 
@@ -22,7 +22,7 @@ const MainPage = () => {
     setCurrentStatus('getting cities');
     axios
       .get(
-        `http://dataservice.accuweather.com/locations/v1/topcities?apikey=${secrets.accuweatherApiKey}`,
+        `https://dataservice.accuweather.com/locations/v1/topcities?apikey=${secrets.accuweatherApiKey}`,
       )
       .then((res) => {
         const citiesObjects = res.data;
@@ -53,7 +53,7 @@ const MainPage = () => {
     setCurrentStatus(`getting temperature for ${selectedCity.cityName}`);
     axios
       .get(
-        `http://dataservice.accuweather.com/forecasts/v1/daily/1day/28143?apikey=${secrets.accuweatherApiKey}`,
+        `https://dataservice.accuweather.com/forecasts/v1/daily/1day/28143?apikey=${secrets.accuweatherApiKey}`,
       )
       .then((res) => {
         const tempObject = res.data;
