@@ -1,12 +1,19 @@
 {
-  "name": "weathery",
-  "displayName": "weathery",
+  "name": "Weathery",
+  "displayName": "Weathery",
   "expo": {
-    "name": "weathery",
+    "name": "Weathery",
     "slug": "weathery",
     "privacy": "unlisted",
     "sdkVersion": "36.0.0",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
     "entryPoint": "node_modules/expo/AppEntry.js",
     "platforms": ["ios", "android", "web"],
     "ios": {
