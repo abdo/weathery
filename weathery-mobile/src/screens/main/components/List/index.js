@@ -9,9 +9,10 @@ import {
   Right,
   View,
 } from 'native-base';
+import Proptypes from 'prop-types';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { colors } from '../../../../assets/styles/base';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const List = ({ cities, getCityTemp }) => {
   return (
@@ -36,6 +37,16 @@ const List = ({ cities, getCityTemp }) => {
       ))}
     </View>
   );
+};
+
+List.propTypes = {
+  cities: Proptypes.arrayOf(Proptypes.shape({})),
+  getCityTemp: Proptypes.func,
+};
+
+List.defaultProps = {
+  cities: [],
+  getCityTemp: () => null,
 };
 
 export default List;

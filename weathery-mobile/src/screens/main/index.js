@@ -74,8 +74,7 @@ const MainScreen = () => {
   };
   return (
     <View>
-      {loading && <Spinner />}
-      <Header />
+      <Header loading={loading} />
       <List cities={cities} getCityTemp={getCityTemp} />
     </View>
   );
